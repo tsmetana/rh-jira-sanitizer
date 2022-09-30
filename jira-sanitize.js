@@ -54,15 +54,10 @@ function unrenderEmoticons(element) {
         emoticonElements,
         (e) => e.nodeName === 'IMG',
     );
-    console.log("Found " + emoticons.length + " emoticons.")
     emoticons.forEach(img => {
-        console.log("Processing " + img.src);
         idx = img.src.lastIndexOf('/');
-        console.log("Substring at " + idx)
         pngfile = img.src.substring(idx + 1);
-        console.log("Using " + pngfile)
         rep = emojiTable[pngfile];
-        console.log("Replacing emoji " + pngfile + " with " + rep);
         if (rep !== undefined) {
             img.replaceWith(document.createTextNode(rep));
         }
