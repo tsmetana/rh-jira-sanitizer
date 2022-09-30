@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "RH Jira Sanitizer",
+  "version": "1.0",
+  "description": "Fixes some of the RH Jira annoyances.",
+  "content_scripts": [
+    {
+      "matches": ["https://issues.redhat.com/*"],
+      "js": ["jira-sanitize.js"]
+    }
+  ]
+}
+
