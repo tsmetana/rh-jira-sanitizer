@@ -39,11 +39,10 @@ const emojiTable = {
 	'help_16.png': "(?)",
 	'lightbulb_on.png': "(on)",
 	'lightbulb.png': "(off)",
-	'star_yellow.png': "(*)",
+	'star_yellow.png': "(*)", // or (*y); there is no certain mapping
 	'star_red.png': "(*r)",
 	'star_green.png': "(*g)",
 	'star_blue.png': "(*b)",
-	'star_yellow.png': "(*y)",
 	'flag.png': "(flag)",
 	'flag_grey.png': "(flagoff)"
 };
